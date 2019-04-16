@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - aframe-core > tween.js > nodeunit > tap > coveralls > request > hawk > hoek:
+        patched: '2019-04-16T01:11:31.408Z'
+    - aframe-core > tween.js > nodeunit > tap > coveralls > request > hawk > sntp > hoek:
+        patched: '2019-04-16T01:11:31.408Z'
+    - aframe-core > tween.js > nodeunit > tap > coveralls > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-04-16T01:11:31.408Z'
+    - aframe-core > tween.js > nodeunit > tap > coveralls > request > hawk > boom > hoek:
+        patched: '2019-04-16T01:11:31.408Z'
+  'npm:lodash:20180130':
+    - aframe-core > tween.js > gulp-jshint > lodash:
+        patched: '2019-04-16T01:11:31.408Z'
+  'npm:minimatch:20160620':
+    - aframe-core > tween.js > gulp-jshint > minimatch:
+        patched: '2019-04-16T01:11:31.408Z'
+    - aframe-core > tween.js > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2019-04-16T01:11:31.408Z'
+    - aframe-core > tween.js > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2019-04-16T01:11:31.408Z'
+    - aframe-core > tween.js > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2019-04-16T01:11:31.408Z'
+    - aframe-core > tween.js > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2019-04-16T01:11:31.408Z'
+  'npm:tunnel-agent:20170305':
+    - aframe-core > tween.js > nodeunit > tap > coveralls > request > tunnel-agent:
+        patched: '2019-04-16T01:11:31.408Z'
+  'npm:uglify-js:20151024':
+    - aframe-core > tween.js > gulp-uglify > uglify-js:
+        patched: '2019-04-16T01:11:31.408Z'
