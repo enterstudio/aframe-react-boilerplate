@@ -7,7 +7,8 @@
     "aframe-react": "^1.0.0",
     "babel-polyfill": "^6.3.14",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "build": "webpack",
@@ -16,7 +17,9 @@
     "gh-pages": "npm run ghpages",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "cd src && python -m SimpleHTTPServer 5555",
-    "serve-js": "webpack-dev-server --content-base src --progress --watch --history-api-fallback --inline --hot"
+    "serve-js": "webpack-dev-server --content-base src --progress --watch --history-api-fallback --inline --hot",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -51,5 +54,6 @@
     "style-loader": "^0.13.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
-  }
+  },
+  "snyk": true
 }
